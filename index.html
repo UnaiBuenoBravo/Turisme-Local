@@ -6,20 +6,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./map-location-dot-solid.svg">
     <title>Document</title>
-<!--
-Una página index.html que incorpore:
-- Un menú con enlaces a las diferentes secciones de la estructura principal 
-- Una estructura central principal con diferentes secciones: 
-- Galería de imágenes
-- Lugares de interés (1, 2, 3, 4). Han de ser "fichas" que contengan un título, texto descriptivo, imagen, ubicación, etc...
-- Mapa de la población.
-- Cualquier elemento adicional que represente una innovación respecto a lo visto en clase y haga la página más atractiva. 
--  Una columna de últimas noticias donde se definirán un par de noticias a modo de resumen sobre algo importante que haya pasado en la localidad 
-
-Se deja libertad respecto al diseño responsive pero se especifica que el punto de corte para el layout alternativo sea cuando la pantalla tenga 700px de ancho. Se ha de ver claramente cambios en la estructura y/o estilos de la página.
-La web será de dominio público (Github Pages) y mostrará los principales lugares, rutas o plazas de la ciudad mostrada.
-Indicar la URL de GitHub Pages como entrega de esta actividad.
--->
 </head>
 <body>
     <header>
@@ -35,50 +21,8 @@ Indicar la URL de GitHub Pages como entrega de esta actividad.
         </nav>
     </header>
 
-    <main>
-        <section id="lugares" class="grid-container">
-            <h2>Lugares Icónicos</h2>
-            <div class="card">
-                <img src="sagrada-familia.jpg" alt="Sagrada Familia">
-                <h3>Sagrada Familia</h3>
-                <p>Una de las obras maestras de Gaudí.</p>
-            </div>
-            <div class="card">
-                <img src="parc-guell.jpg" alt="Parc Güell">
-                <h3>Parc Güell</h3>
-                <p>Un parque lleno de color y diseño modernista.</p>
-            </div>
-        </section>
-
-        <section id="comida" class="grid-container">
-            <h2>Comida Recomendadada</h2>
-            <div class="card">
-                <h3>Empanat (Sagrera)</h3>
-                <p>Las mejores empanadas argentinas en Barcelona.</p>
-            </div>
-            <div class="card">
-                <h3>Can Culleretes</h3>
-                <p>El restaurante más antiguo de Barcelona, con comida tradicional.</p>
-            </div>
-            <div class="card">
-                <h3>Sense Fons (Travesera de les Corts)</h3>
-                <p>Comida casera y almuerzos espectaculares.</p>
-            </div>
-        </section>
-
-        <section id="equipo">
-            <h2>FC Barcelona</h2>
-            <p>El equipo más representativo de la ciudad, con una historia llena de éxitos.</p>
-        </section>
-
-        <section id="mapa">
-            <h2>Mapa de Barcelona</h2>
-            <a href="https://www.barcelona.cat/es" target="_blank">
-                <iframe src="mapa-turistico-barcelona-2025.png" width="100%" height="600"></iframe>
-            </a>
-            <!-- <iframe src="mapa_bcn.jpg" width="100%" height="300"></iframe> -->            
-        </section>
-
+    <main class="main-container">
+        <!-- Columna de Noticias -->
         <aside id="noticias">
             <h2>Últimas Noticias</h2>
             <article>
@@ -90,6 +34,50 @@ Indicar la URL de GitHub Pages como entrega de esta actividad.
                 <p>El equipo se acerca al título.</p>
             </article>
         </aside>
+
+        <!-- Columna de Contenido Principal -->
+        <section id="contenido">
+            <section id="lugares" class="grid-container">
+                <h2>Lugares Icónicos</h2>
+                <div class="card">
+                    <img src="sagrada-familia.jpg" alt="Sagrada Familia">
+                    <h3>Sagrada Familia</h3>
+                    <p>Una de las obras maestras de Gaudí.</p>
+                </div>
+                <div class="card">
+                    <img src="parc-guell.jpg" alt="Parc Güell">
+                    <h3>Parc Güell</h3>
+                    <p>Un parque lleno de color y diseño modernista.</p>
+                </div>
+            </section>
+
+            <section id="comida" class="grid-container">
+                <h2>Comida Recomendadada</h2>
+                <div class="card">
+                    <h3>Empanat (Sagrera)</h3>
+                    <p>Las mejores empanadas argentinas en Barcelona.</p>
+                </div>
+                <div class="card">
+                    <h3>Can Culleretes</h3>
+                    <p>El restaurante más antiguo de Barcelona, con comida tradicional.</p>
+                </div>
+                <div class="card">
+                    <h3>Sense Fons (Travesera de les Corts)</h3>
+                    <p>Comida casera y almuerzos espectaculares.</p>
+                </div>
+            </section>
+
+            <section id="equipo">
+                <h2>FC Barcelona</h2>
+                <p>El equipo más representativo de la ciudad, con una historia llena de éxitos.</p>
+            </section>
+        </section>
+
+        <!-- Columna de Mapa -->
+        <section id="mapa">
+            <h2><a href="https://www.barcelona.cat/es"> Mapa de Barcelona </a></h2>
+                <iframe src="mapa-turistico-barcelona-2025.png" width="100%" height="600"></iframe>
+        </section>
     </main>
 </body>
 </html>
