@@ -1,83 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre Barcelona</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./map-location-dot-solid.svg">
-    <title>Document</title>
 </head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
 <body>
     <header>
-        <h1>Descubre Barcelona</h1>
-        <nav>
+        <h1>Bienvenidos a Barcelona</h1>
+        <p>¿Estás buscando que es Barcelona? Aquí la puedes ver, nosotros dejamos que la descubras.</p>
+    </header>
+    
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Índice</h2>
             <ul>
-                <li><a href="./vistar.html">Lugares</a></li>
-                <li><a href="./comidas.html">Comida</a></li>
-                <li><a href="./FCBarcelona.html">FC Barcelona</a></li>
-                <li><a href="#mapa">Mapa</a></li>
-                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#comidas">Comidas</a></li>
+                <ol>
+                    <li><a href="#plat1">Carn d'olla</a></li>
+                    <li><a href="#plat2">Canalons</a></li>
+                    <li><a href="#plat3">Crema Catalana</a></li>
+                </ol>
+                <li><a href="#lugares">Lugares Emblemáticos</a></li>
+                <ol>
+                    <li><a href="#lugar1">Sagrada Familia</a></li>
+                    <li><a href="#lugar2">Parc Güell</a></li>
+                    <li><a href="#lugar3">Miralos <strong>TODOS</strong></a></li>
+                </ol>
+                <li><a href="#fcbarcelona">FC Barcelona</a></li>
+                <ol>
+                    <li><a href="#Escudos">Escudos</a></li>
+                    <li><a href="#webFCB">Web FCB</a></li>
+                </ol>
             </ul>
         </nav>
-    </header>
+        
+        <main class="content">
+            <section id="comidas">
+                <h2>Comidas</h2>
+                <p>Barcelona ofrece una variedad gastronómica increíble, desde tapas tradicionales hasta cocina de vanguardia. <br>
+                Vamos a mencionar algunos de los platos más típicos:
+                </p>
+                <ol>
+                    <li><h3 id="plat1">Carn d'olla</h3></li>
+                    <p>La <i>"Carn d'olla"</i> es un plato que se compone de varias partes, todas hechas en la misma olla que el cocido.
+                    Se pone muchisimas cosas como butifarra blanca, pollo, oreja de cerdo, pies, garbanzos, patata, pilota entre otros totalmente personalizables extras, y evidentemente... <strong><i>EL CALDO</i>.</strong>
+                    <br><br>
+                    Se caracteriza por un plato con un enorme sabor, caliente y muy saciante, personalmente, mi favorito. </p>
+                    <a href="https://cookpad.com/es/recetas/129475-cocido-catalan-escudella-i-carn-dolla"><img src="./carn-d'olla.jpg" alt="Carn d'olla"> <i>¡Haz click en la foto para ver la receta!</i></a> 
+                    <br><br>
+                    <hr>
+                    <br>
 
-    <main class="main-container">
-        <!-- Columna de Noticias -->
-        <aside id="noticias">
-            <h2>Últimas Noticias</h2>
-            <article>
-                <h3>Nuevo restaurante abre en Barcelona</h3>
-                <p>Sense Fons abre sus puertas en Les Corts.</p>
-            </article>
-            <article>
-                <h3>El FC Barcelona gana su último partido</h3>
-                <p>El equipo se acerca al título.</p>
-            </article>
-        </aside>
-
-        <!-- Columna de Contenido Principal -->
-        <section id="contenido">
-            <section id="lugares" class="grid-container">
-                <h2>Lugares Icónicos</h2>
-                <div class="card">
-                    <img src="sagrada-familia.jpg" alt="Sagrada Familia">
-                    <h3>Sagrada Familia</h3>
-                    <p>Una de las obras maestras de Gaudí.</p>
-                </div>
-                <div class="card">
-                    <img src="parc-guell.jpg" alt="Parc Güell">
-                    <h3>Parc Güell</h3>
-                    <p>Un parque lleno de color y diseño modernista.</p>
-                </div>
+                    <li><h3 id="plat2">Canalons</h3></li>
+                    <p>En la gastronomía catalana, los canelones los introdujeron los cocineros italianos de algunas familias de la burguesía barcelonesa del siglo XIX.
+                    <br><br>
+                    Hoy los canelones modificados en la catalana se consideran típicos de la tierra.
+                    <br><br>
+                    Algunos años se los hice con estas sobres y las del pollo relleno del día de Navidad, tal y como hacían en casa cuando yo era un niño, entonces se aprovechaba todo. Y soy del parecer que debemos hacerlo, siempre que podamos, y no sólo en el caso de los canelones.
+                    <br><br>
+                    Pero la receta tradicional de los canelones a la catalana es, como hemos comentado antes, con la carne asada.
+                    <br><br>
+                    Es el plato más característico del día de San Esteban.
+                     </p>
+                    <a href="https://www.racocatala.cat/canal/article/34594/canelons-a-la-catalana"><img src="./cananlons.jpg" alt="Canalons"> <i>¡Haz click en la foto para ver la receta!</i></a>
+                    <br><br>
+                    <hr>
+                    <br>
+                    <li><h3 id="plat3">Crema Catalana</h3></li>
+                    <p>Ya solo nos faltava un postre para completar este "Menú". Y que mejor que la crema catalana para hacerlo.
+                    <br><br>
+                    Este postre tiene un origen muy curioso. Se remonta al siglo XVIII, durante la visita de un obispo a un convento catalán. Las monjas decidieron prepararle un flan de postre que quedó demasiado líquido, por ello intentaron arreglarlo cubriéndolo de azúcar tostada por encima. <br><br>
+                    </p>
+                    <a href="https://recetasdecocina.elmundo.es/2015/08/crema-catalana-receta-casera.html"><img src="./crema-catalana.jpg" alt="Crema catalana"> <i>¡Haz click en la foto para ver la receta!</i></a>
+                </ol>
+                <br>
+                
+                <button onclick="scrollToTop()">Volver al Índice</button>
+                <br>
+                <hr>
+                <br>
             </section>
-
-            <section id="comida" class="grid-container">
-                <h2>Comida Recomendadada</h2>
-                <div class="card">
-                    <h3>Empanat (Sagrera)</h3>
-                    <p>Las mejores empanadas argentinas en Barcelona.</p>
-                </div>
-                <div class="card">
-                    <h3>Can Culleretes</h3>
-                    <p>El restaurante más antiguo de Barcelona, con comida tradicional.</p>
-                </div>
-                <div class="card">
-                    <h3>Sense Fons (Travesera de les Corts)</h3>
-                    <p>Comida casera y almuerzos espectaculares.</p>
-                </div>
+            
+            <section id="lugares">
+                <h2>Lugares Emblemáticos</h2>
+                <p>Desde la Sagrada Familia hasta el Parque Güell, descubre la magia de Barcelona.</p>
+                <ol>
+                    <li id="lugar1"><h3>Sagrada Familia</h3></li>
+                    <p>La Sagrada Familia es una de las obras arquitectónicas más emblemáticas y reconocidas de Barcelona, España. Diseñada por el arquitecto Antoni Gaudí, esta basílica se ha convertido en un símbolo de la ciudad y un referente mundial del modernismo. La construcción de la Sagrada Familia comenzó en 1882 y, aunque Gaudí dedicó gran parte de su vida al proyecto, sigue en construcción hoy en día, con una fecha de finalización estimada para 2026, en el centenario de la muerte del arquitecto.
+                    <br><br>
+                    Es considerada Patrimonio de la Humanidad por la UNESCO y atrae a millones de visitantes de todo el mundo cada año.</p>
+                    <a href="https://parkguell.barcelona/"><img src="./sagrada_familia.jpg" alt="Lugares emblemáticos de Barcelona"></a>
+                    <br>
+                    <hr>
+                    <br>
+                    <li><h3 id="lugar2">Parc Güell</h3></li>
+                    <p>El Parc Güell es otro de los grandes tesoros arquitectónicos de Barcelona, diseñado también por Antoni Gaudí. Inaugurado en 1922, el parque originalmente fue concebido como una urbanización privada, pero con el tiempo se transformó en un espacio público. Hoy en día es uno de los lugares más visitados de la ciudad y un ejemplo sobresaliente del modernismo catalán.
+                    <br><br>
+                    El parque fue declarado Patrimonio de la Humanidad por la UNESCO en 1984, en reconocimiento a su valor artístico y cultural. Además de su belleza arquitectónica, el Parc Güell ofrece impresionantes vistas de Barcelona, convirtiéndolo en un lugar perfecto para disfrutar de la naturaleza y la arquitectura en un solo espacio.</p>
+                    <a href="https://sagradafamilia.org/es/home"><img src="./parc_guell.avif" alt="Lugares emblemáticos de Barcelona"></a>
+                    <br>
+                    <hr>
+                    <br>
+                </ol>
+                <p>Estos son dos grandes, otros lugares que podemos mencionar igual de importantes pueden ser La pedrera, el Puerto Olimpico, la Rambla, el Mercado de la Boqueria, el Barrio Gótico, el Palau de la Música Catalana...</p>
+                <ul id="lugar3">
+                    <li><a href="https://www.lapedrera.com/es">La pedrera</a></li>
+                    <li><a href="https://portolimpic.barcelona/es">Port Olímpic</a></li>
+                    <li><a href="https://www.barcelona.cat/es/conocebcn/pics/la-rambla-99400356278">Rambla</a></li>
+                    <li><a href="https://www.boqueria.barcelona/inicio">Mercado de la Boqueria</a></li>
+                    <li><a href="https://www.disfrutabarcelona.com/barrio-gotico-barcelona">Barrio Gótico</a></li>
+                    <li><a href="https://www.palaumusica.cat/es">Palau de la Música Catalana</a></li>
+                </ul>
+                
+                <button onclick="scrollToTop()">Volver al Índice</button>
             </section>
-
-            <section id="equipo">
+            <br>
+            <hr>
+            <br>
+            
+            <section id="fcbarcelona">
                 <h2>FC Barcelona</h2>
-                <p>El equipo más representativo de la ciudad, con una historia llena de éxitos.</p>
-            </section>
-        </section>
+                <p>El club más emblemático de la ciudad y su impacto en la cultura catalana.</p>
+                <p>Para aquellos fanáticos del deporte, en Fútbol Club Barcelona, es la institucion por excelencia.
+                <br><br>
+                El club fue creado en 1899 por el entrenador Andoni Martínez y ha tenido un crecimiento continuo, convirtiéndose en un estadio de gran tamaño y prestigio. A pesar de su gran trayectoria, Fútbol Club Barcelona sigue siendo un club deportivo de primera y segunda división.
+                </p>
+                <div class="carousel">
+                    <div class="carousel-images">
+                      <img src="./pick1.jpg" alt="Imagen 1">
+                      <img src="./aficion-cule-lluiscompanys_1200_800.webp" alt="Imagen 2">
+                      <img src="./pick3.jpg" alt="Imagen 3">
+                    </div>
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                  </div>
+                  
+                  <script>
+                    let currentIndex = 0;
+                    const images = document.querySelectorAll('.carousel-images img');
+                    const totalImages = images.length;
+                  
+                    document.querySelector('.next').addEventListener('click', () => {
+                      currentIndex = (currentIndex + 1) % totalImages;
+                      updateCarousel();
+                    });
+                  
+                    document.querySelector('.prev').addEventListener('click', () => {
+                      currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+                      updateCarousel();
+                    });
+                  
+                    function updateCarousel() {
+                      const newTransformValue = -currentIndex * 100;
+                      document.querySelector('.carousel-images').style.transform = `translateX(${newTransformValue}%)`;
+                    }
+                  </script>
+                <br><br>
+                <h3 id="Escudos">Escudos del FCBarcelona</h3>
+                <p>El escudo del FC Barcelona fue creado en 1899, incorporando inicialmente las iniciales del club y elementos del escudo de la ciudad, como las cuatro barras rojas y amarillas de Cataluña y la cruz de San Jorge.
+                <br><br>
+                A lo largo de los años, el diseño fue evolucionando, simplificándose y modernizándose. En 1910, se añadió la cruz de San Jorge y las barras catalanas. 
+                <br><br>
+                En 1974, el escudo adoptó su diseño actual, con líneas más limpias y la inclusión de la frase "Més que un club". Desde entonces, el escudo ha permanecido casi sin cambios, representando tanto al club como a la identidad catalana.</p>
+                <img src="./Escuts_evo_verificats_web.webp" alt="Escuts FCB">
+                <h3 id="webFCB">Visita la web del FCB haciendo click en esta imagen</h3>
+                <a href="https://www.fcbarcelona.com/"><img src="./FCB.webp" alt="FC Barcelona"></a>
 
-        <!-- Columna de Mapa -->
-        <section id="mapa">
-            <h2><a href="https://www.barcelona.cat/es"> Mapa de Barcelona </a></h2>
-                <iframe src="mapa-turistico-barcelona-2025.png" width="100%" height="600"></iframe>
-        </section>
-    </main>
+
+                <button onclick="scrollToTop()">Volver al Índice</button>
+            </section>
+        </main>
+        
+        <aside class="news">
+            <h2 id="news">Noticias de Barcelona</h2>
+            <a href="./mapa-turistico-bcn.jpg" target="">Ver Mapa Turístico de Barcelona</a>
+            <hr>
+            <p>El Port de Barcelona adjudica las infraestructuras del Moll Catalunya por 72,3 millones de euros.
+                <br><br>
+                <img class="img" src="./port_new.webp">
+                <a href="https://www.elperiodico.com/es/economia/20250226/puerto-barcelona-adjudica-infraestructuras-moll-catalunya-72-millones-114724032"> Mira la notícia</a></p>
+            <hr>
+            <p>Decretan prisión provisional para la madre del bebé encontrado muerto en un contenedor en Cubelles.
+                <br><br>
+                <img class="img" src="./mossos.webp" alt="">
+                <a href="https://www.20minutos.es/noticia/5686266/0/decretan-prision-provisional-para-la-madre-del-bebe-encontrado-muerto-en-un-contenedor-en-cubelles/"> Mira la notícia</a></p>
+            <hr>
+            <p>Una plaza Espanya "caminable", ampliar el Sant Jordi Club...: Barcelona quiere convertir Montjuïc en un área central en diez años.
+                <br><br>
+                <img class="img" src="./pl_esp.webp" alt="Pl.España">
+                <a href="https://www.20minutos.es/noticia/5686235/0/plaza-espanya-caminable-ampliar-sant-jordi-club-barcelona-transformara-montjuic-eje-central-diez-anos/"> Mira la notícia</a></p>
+            <hr>
+            <p>El artista canario "Quevedo" presenta ahora la gira Buenas Noches Tour, un nuevo espectáculo en directo que prevé una producción de primer nivel, con un despliegue visual y sonoro a la altura de las grandes estrellas internacionales. En dos fechas en Barcelona 8 y 9 de septiembre.
+                <br><br>
+                <img class="img" src="./quevedo_palau.jpg">
+                <a href="https://palausantjordi.barcelona/es/quevedo-8-y-9-septiembre">¡Consigue tus entradas!</a></p>
+                <a href="https://unaibuenobravo.github.io/myspoti2/">Conoce a Quevedo</a>
+            <hr>
+            <p>Nace una niña en el metro de Barcelona con la ayuda de personal de TMB: "Fue todo muy rápido"
+
+                <br><br>
+                <img class="img" src="./tmb.webp">
+                <a href="https://www.3cat.cat/324/neix-una-nena-al-metro-de-barcelona-amb-lajuda-de-personal-de-tmb-va-ser-tot-molt-rapid/noticia/3337746/"">Mira la notícia</a></p>
+            <hr>
+            <p>¡¿Quieres ver a uno de los mejores equipos en vivo y directo en un autenctico partido?! Ven a Montjuic a vivir una experecia increbile en la disputa por el campeonato liguero.
+                <br><br>
+                <img class="img" src="./jornada_26.png">
+                <a href="https://www.fcbarcelona.es/es/entradas/futbol/regular/laliga/fcbarcelona-realsociedad?adobe_mc=MCORGID%3D7BEDF655569E15537F000101%2540AdobeOrg%7CTS%3D1740607333"> ¡No te lo pierdas!</a></p>
+            <hr>
+            <button onclick="scrollToTop()">Volver al Índice</button>
+        </aside>
+    </div>
+    
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    <footer>
+        <p>UnaiBuenoBravo's Rights © 2025 </p>
+    </footer>
 </body>
 </html>
